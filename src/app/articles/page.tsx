@@ -3,6 +3,7 @@ import ArticleCard from "../../components/ArticleCard";
 import CTASection from "../../components/CTASection";
 import { getAllArticles } from "../../components/lib/api";
 import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
 
 /**
  * Articles index page. Fetches all articles and displays them in a grid.
@@ -30,7 +31,7 @@ export default async function ArticlesPage() {
       </section>
       <CTASection />
         </section>
-      
+      <Footer />
     </div>
   );
 }

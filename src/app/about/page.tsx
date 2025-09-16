@@ -1,6 +1,6 @@
 import Banner from "../../components/Banner";
 import Navbar from "@/components/Navbar";
-
+import Footer from "@/components/Footer";
 
 export default function AboutPage() {
     return (
@@ -53,7 +53,7 @@ export default function AboutPage() {
           </section>
         </div>
         </div>
-      
+      <Footer />
       </div>
     );
   }

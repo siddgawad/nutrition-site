@@ -2,6 +2,7 @@ import Banner from "../../components/Banner";
 import Pricing from "../../components/Pricing";
 import CTASection from "../../components/CTASection";
 import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
 
 export default function PricingPage() {
   return (
@@ -15,6 +16,7 @@ export default function PricingPage() {
       <Pricing />
       <CTASection />
           </section>
+          <Footer />
     </div>
   );
 }

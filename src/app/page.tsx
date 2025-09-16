@@ -28,7 +28,7 @@ export default async function Page() {
       <Hero />
       <Programs />
       {/* Latest Recipes */}
-      <section className="py-16 md:py-24 bg-white/30 backdrop-blur-[2px] mx-6 mt-20 mb-6 rounded-2xl px-10 py-20" id="latest-recipes">
+      <section className="py-16 md:py-24 bg-white/30 backdrop-blur-[2px] mx-6 md:mx-8 2xl:mx-30 my-35 rounded-2xl px-10 py-20" id="latest-recipes">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <h2 className="text-2xl md:text-3xl font-bold text-slate-900">
             Latest Recipes
@@ -44,7 +44,7 @@ export default async function Page() {
         </div>
       </section>
       {/* Latest Articles */}
-      <section className="md:py-24  bg-white/30 backdrop-blur-[2px] mx-6 mt-20 mb-6 rounded-2xl px-10 py-20" id="latest-articles">
+      <section className="md:py-24  bg-white/30 backdrop-blur-[2px] mx-6 md:mx-8 2xl:mx-30 my-35 rounded-2xl px-10 py-20" id="latest-articles">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <h2 className="text-2xl md:text-3xl font-bold text-slate-900">
             Latest Articles

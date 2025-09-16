@@ -3,6 +3,8 @@ import RecipeCard from "../../components/RecipeCard";
 import CTASection from "../../components/CTASection";
 import { getAllRecipes } from "../../components/lib/api";
 import Navbar  from "@/components/Navbar";
+import Footer from "@/components/Footer";
+
 
 /**
  * Recipes index page. Fetches all recipes from the backend and displays
@@ -13,9 +15,10 @@ import Navbar  from "@/components/Navbar";
 export default async function RecipesPage() {
   const recipes = await getAllRecipes();
   return (
-    <div>
+    <div  className="bg-green-200">
         <Navbar />
-      <Banner
+        <section className="pt-20 lg:mx-8 xl:mx-10">
+        <Banner
         title="Recipes"
         subtitle="Discover nutritious and delicious dishes to support your goals."
       />
@@ -29,6 +32,8 @@ export default async function RecipesPage() {
         </div>
       </section>
       <CTASection />
+        </section>
+        <Footer />
     </div>
   );
 }

@@ -2,6 +2,7 @@ import { notFound } from "next/navigation";
 import Banner from "../../../components/Banner";
 import { getArticle } from "../../../components/lib/api";
 import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
 
 interface ArticlePageProps {
   params: { slug: string };
@@ -51,7 +52,7 @@ export default async function ArticlePage({ params }: ArticlePageProps) {
         )}
       </article>
         </section>
-      
+      <Footer />
     </div>
   );
 }

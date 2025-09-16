@@ -2,6 +2,7 @@ import Banner from "../../components/Banner";
 import Programs from "../../components/Programs";
 import CTASection from "../../components/CTASection";
 import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
 
 /**
  * Programs page. It wraps the Programs component with a banner and ends
@@ -21,7 +22,7 @@ export default function ProgramsPage() {
       <Programs />
       <CTASection />
       </section>
-     
+     <Footer />
     </div>
   );
 }
