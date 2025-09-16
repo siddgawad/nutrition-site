@@ -11,14 +11,17 @@ import Navbar from "@/components/Navbar";
  */
 export default function ProgramsPage() {
   return (
-    <div>
+    <div className="bg-green-200">
         <Navbar />
+      <section className="pt-20 lg:mx-8 xl:mx-10">
       <Banner
         title="Our Programs"
         subtitle="Tailored nutrition coaching to support your unique needs."
       />
       <Programs />
       <CTASection />
+      </section>
+     
     </div>
   );
 }

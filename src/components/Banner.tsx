@@ -18,7 +18,8 @@ interface BannerProps {
   }: BannerProps) {
     return (
       <section
-        className="relative flex items-center justify-center h-[300px] md:h-[400px] bg-green-700 text-center text-white"
+        className="relative flex items-center
+         justify-center md:py-24 bg-white/30 backdrop-blur-[2px] mx-6 mt-20 rounded-2xl px-10 py-20 text-zinc-900"
         style={{
           backgroundImage: backgroundImage
             ? `url(${backgroundImage})`
@@ -31,7 +32,7 @@ interface BannerProps {
           <div className="absolute inset-0 bg-green-800/60"></div>
         )}
         <div className="relative z-10 px-4">
-          <h1 className="text-3xl md:text-5xl font-bold">{title}</h1>
+          <h1 className="text-3xl md:text-5xl font-bold ">{title}</h1>
           {subtitle && (
             <p className="mt-4 text-sm md:text-base max-w-2xl mx-auto">
               {subtitle}

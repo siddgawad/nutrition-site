@@ -1,7 +1,7 @@
 // Option 1: Add margin and positioning like navbar
 export default function Hero() {
     return (
-      <section className="relative overflow-hidden bg-white/30 backdrop-blur-[2px] mx-6 mt-20 mb-6 rounded-2xl px-10 py-20">
+      <section className="relative overflow-hidden bg-white/30 backdrop-blur-[2px] mx-6 mt-35 md:mx-8 2xl:mx-30 mb-6 rounded-2xl px-10 py-20">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 grid md:grid-cols-2 gap-10 items-center">
           <div>
             <h1 className="text-3xl md:text-5xl font-bold text-slate-900">

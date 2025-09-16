@@ -12,13 +12,14 @@ import Navbar from "@/components/Navbar";
 export default async function ArticlesPage() {
   const articles = await getAllArticles();
   return (
-    <div>
+    <div className="bg-green-200">
         <Navbar />
-      <Banner
+        <section className="pt-20 lg:mx-8 xl:mx-10">
+        <Banner
         title="Articles"
         subtitle="Stay informed with our latest nutrition insights and tips."
       />
-      <section className="py-16 md:py-24 bg-green-50">
+      <section className="pt-20 lg:mx-8 xl:mx-10">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5 gap-6">
             {articles.map((article) => (
@@ -28,6 +29,8 @@ export default async function ArticlesPage() {
         </div>
       </section>
       <CTASection />
+        </section>
+      
     </div>
   );
 }

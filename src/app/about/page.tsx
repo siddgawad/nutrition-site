@@ -1,10 +1,12 @@
 import Banner from "../../components/Banner";
 import Navbar from "@/components/Navbar";
 
+
 export default function AboutPage() {
     return (
-      <div className="flex flex-col">
-        <Navbar />
+      <div className="bg-green-200" >
+           <Navbar />
+        <div className="pt-20 lg:mx-8 xl:mx-10">
         <Banner
           title="About NutriWell"
           subtitle="The story of how we transformed our health and now help others do the same."
@@ -12,8 +14,8 @@ export default function AboutPage() {
           // relative path to your image inside the public folder, e.g.
           // backgroundImage="/about-banner.jpg"
         />
-        <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8 py-16 space-y-10">
-          <section>
+        <div>
+          <section className="bg-white/30 backdrop-blur-[2px] mx-6 mt-20 rounded-2xl px-10 py-20">
             <h2 className="text-2xl font-bold text-green-800 mb-4">A Normal Life</h2>
             <p className="text-slate-700 leading-relaxed">
               Not all health coaches have a history of clean eating and regular workouts.
@@ -27,7 +29,7 @@ export default function AboutPage() {
               at first but eventually became a habit—and it transformed our lives.
             </p>
           </section>
-          <section>
+          <section className="bg-white/30 backdrop-blur-[2px] mx-6 mt-20 rounded-2xl px-10 py-20">
             <h2 className="text-2xl font-bold text-green-800 mb-4">The Turning Point</h2>
             <p className="text-slate-700 leading-relaxed">
               Health issues like PCOS and back pain forced us to confront the reality
@@ -36,7 +38,7 @@ export default function AboutPage() {
               energy levels and rediscovered confidence.
             </p>
           </section>
-          <section>
+          <section className="bg-white/30 backdrop-blur-[2px] mx-6 mt-20 rounded-2xl px-10 py-20">
             <h2 className="text-2xl font-bold text-green-800 mb-4">
               The NutriWell Mission
             </h2>
@@ -50,6 +52,8 @@ export default function AboutPage() {
             </p>
           </section>
         </div>
+        </div>
+      
       </div>
     );
   }

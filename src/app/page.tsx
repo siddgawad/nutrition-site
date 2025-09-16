@@ -6,6 +6,7 @@ import RecipeCard from "../components/RecipeCard";
 import ArticleCard from "../components/ArticleCard";
 import { getAllRecipes, getAllArticles } from "../components/lib/api";
 import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
 
 /**
  * Home page. It assembles the hero, programs, pricing and CTA sections. It
@@ -23,7 +24,7 @@ export default async function Page() {
     <div className="bg-green-200">
     
       <Navbar />
-      <div className="pt-2">
+      <div className="pt-2 lg:mx-8 xl:mx-10">
       <Hero />
       <Programs />
       {/* Latest Recipes */}
@@ -61,7 +62,7 @@ export default async function Page() {
       <Pricing />
       <CTASection />  
         </div>
-      
+        <Footer />
     </div>
   );
 }

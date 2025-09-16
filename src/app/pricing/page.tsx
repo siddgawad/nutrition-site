@@ -5,14 +5,16 @@ import Navbar from "@/components/Navbar";
 
 export default function PricingPage() {
   return (
-    <div>
+    <div className="bg-green-200">
         <Navbar />
-      <Banner
+        <section className="pt-20 lg:mx-8 xl:mx-10">
+        <Banner
         title="Plans & Pricing"
         subtitle="Flexible, transparent pricing for every stage of your journey."
       />
       <Pricing />
       <CTASection />
+          </section>
     </div>
   );
 }
