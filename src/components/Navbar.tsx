@@ -38,13 +38,13 @@ export default function Navbar() {
             height={100}
             priority
           />
-          <span className="font-semibold text-green-800 tracking-tight hidden sm:block">
+          <span className="font-bold text-green-800 text-lg tracking-tight hidden sm:block">
             NutriWell
           </span>
         </Link>
 
         {/* Desktop navigation */}
-        <nav className="hidden md:flex items-center gap-6 text-sm font-medium">
+        <nav className="hidden md:flex items-center gap-4 text-md lg:gap-10 lg:text-lg font-medium">
           {navItems.map(({ href, label }) => {
             const isActive = pathname === href;
             return (
@@ -53,7 +53,7 @@ export default function Navbar() {
                 href={href}
                 className={
                   (isActive
-                    ? "text-green-900 font-semibold"
+                    ? "text-green-900 font-bold "
                     : "text-green-800") +
                   " hover:underline underline-offset-4 decoration-2"
                 }
@@ -65,7 +65,7 @@ export default function Navbar() {
         </nav>
 
         {/* Right side: social icons + CTA and mobile menu toggle */}
-        <div className="flex items-center gap-4">
+        <div className="flex items-center gap-4 mr-8">
           {/* Social icons visible above sm */}
           <div className="hidden sm:flex items-center gap-2">
             <Instagram />

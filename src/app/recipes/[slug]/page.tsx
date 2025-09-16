@@ -2,6 +2,7 @@ import { notFound } from "next/navigation";
 import Banner from "../../../components/Banner";
 import { getRecipe } from "../../../components/lib/api";
 import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
 
 interface RecipePageProps {
   params: { slug: string };
@@ -18,9 +19,10 @@ export default async function RecipePage({ params }: RecipePageProps) {
     notFound();
   }
   return (
-    <div>
+    <div  className="bg-green-200">
         <Navbar />
-      <Banner title={recipe.title} subtitle={recipe.excerpt} />
+        <section  className="pt-20 lg:mx-8 xl:mx-10">
+        <Banner title={recipe.title} subtitle={recipe.excerpt} />
       <article className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8 py-16">
         {/* Metadata */}
         <div className="text-sm text-slate-500 mb-4">
@@ -69,16 +71,16 @@ export default async function RecipePage({ params }: RecipePageProps) {
           <section className="mb-8">
             <h2 className="text-xl font-semibold text-green-800 mb-2">Macros</h2>
             <div className="overflow-x-auto">
-              <table className="w-full text-left border border-slate-200">
+              <table className="w-full text-left border border-slate-500">
                 <thead>
                   <tr className="bg-green-100 text-green-700">
-                    <th className="px-3 py-2 border-b">Nutrient</th>
-                    <th className="px-3 py-2 border-b">Amount</th>
+                    <th className="px-3 py-2 border-b border-slate-500">Nutrient</th>
+                    <th className="px-3 py-2 border-b border-slate-500">Amount</th>
                   </tr>
                 </thead>
                 <tbody>
                   {Object.entries(recipe.macros).map(([nutrient, amount]) => (
-                    <tr key={nutrient} className="border-b last:border-b-0">
+                    <tr key={nutrient} className="border border-slate-500 bg-white/30 last:border-b-0">
                       <td className="px-3 py-2 font-medium text-slate-800">
                         {nutrient}
                       </td>
@@ -98,6 +100,8 @@ export default async function RecipePage({ params }: RecipePageProps) {
           </section>
         )}
       </article>
+        </section>
+    <Footer />
     </div>
   );
 }

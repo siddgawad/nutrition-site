@@ -23,7 +23,7 @@ export default async function ArticlePage({ params }: ArticlePageProps) {
         <Navbar />
         <section  className="pt-20 lg:mx-8 xl:mx-10">
         <Banner title={article.title} subtitle={article.excerpt} />
-      <article className=" max-w-3xl px-4 sm:px-6 lg:px-8 py-16 bg-white/30 backdrop-blur-[2px] mx-6 mt-20 rounded-2xl ">
+      <article className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8 py-16">
         <div className="text-sm text-slate-500 mb-4">
           {new Date(article.date).toLocaleDateString('en-IN', {
             year: 'numeric',
@@ -33,11 +33,11 @@ export default async function ArticlePage({ params }: ArticlePageProps) {
           · by {article.author}
         </div>
         {article.categories && article.categories.length > 0 && (
-          <div className="mb-6 flex flex-wrap gap-2 text-xs">
+          <div className="mb-6 flex flex-wrap gap-2 text-lg">
             {article.categories.map((cat) => (
               <span
                 key={cat}
-                className="bg-green-100 text-green-700 px-2 py-0.5 rounded-full"
+                className="bg-white/30 text-green-700 px-2 py-0.5 rounded-full"
               >
                 {cat}
               </span>
