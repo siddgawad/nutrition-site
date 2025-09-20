@@ -1,6 +1,9 @@
 // import StreakPill from "./ui/StreakPill";
 // import ProgressRing from "./ui/ProgressRing";
 
+import Image from "next/image";
+import heroSunset from "../../public/heroSunset.png"
+
 // Option 1: Add margin and positioning like navbar
 export default function Hero() {
     return (
@@ -41,12 +44,7 @@ export default function Hero() {
             </div>
           </div>
           <div className="aspect-[4/3] md:aspect-square rounded-2xl bg-white/30 backdrop-blur-sm shadow-inner border border-white/20 flex items-center justify-center">
-            <div className="text-center p-8">
-              <div className="text-6xl">🥗</div>
-              <p className="mt-3 text-sm text-slate-500">
-                Add your brand photo here
-              </p>
-            </div>
+          <Image src={heroSunset} alt={"Hero Image"}/>
           </div>
         </div>
       </section>

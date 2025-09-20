@@ -4,7 +4,7 @@ import Footer from "@/components/Footer";
 
 export default function AboutPage() {
     return (
-      <div className="bg-green-200" >
+      <div className="min-h-dvh bg-sunset">
            <Navbar />
         <div className="pt-20 lg:mx-8 xl:mx-10">
         <Banner

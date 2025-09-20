@@ -19,7 +19,7 @@ export default async function ArticlePage({ params }: ArticlePageProps) {
     notFound();
   }
   return (
-    <div className="bg-green-200">
+    <div className="min-h-dvh bg-sunset">
         <Navbar />
         <section  className="pt-20 lg:mx-8 xl:mx-10">
         <Banner title={article.title} subtitle={article.excerpt} />

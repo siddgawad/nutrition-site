@@ -15,7 +15,7 @@ import Footer from "@/components/Footer";
 export default async function RecipesPage() {
   const recipes = await getAllRecipes();
   return (
-    <div  className="bg-green-200">
+    <div className="min-h-dvh bg-sunset">
         <Navbar />
         <section className="pt-20 md:mx-8  2xl:mx-30  text-center">
         <Banner

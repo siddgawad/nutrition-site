@@ -9,10 +9,11 @@ import Footer from "@/components/Footer";
  * with a call‑to‑action. The Programs component lists the available
  * coaching options. Feel free to add more descriptive text here if
  * desired.
+ * Programs/Pricing cards: add 1-2 Badge chips (e.g., “Beginner-friendly”, “Most popular”) for social proof.
  */
 export default function ProgramsPage() {
   return (
-    <div className="bg-green-200">
+    <div className="min-h-dvh bg-sunset">
         <Navbar />
       <section className="pt-20 lg:mx-8 xl:mx-10">
       <Banner

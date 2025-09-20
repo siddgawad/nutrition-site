@@ -13,7 +13,7 @@ import Footer from "@/components/Footer";
 export default async function ArticlesPage() {
   const articles = await getAllArticles();
   return (
-    <div className="bg-green-200">
+    <div className="min-h-dvh bg-sunset">
         <Navbar />
         <section className="pt-20 lg:mx-8 xl:mx-10 text-center">
         <Banner
