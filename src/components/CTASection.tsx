@@ -1,6 +1,7 @@
 export default function CTASection() {
     return (
-      <section id="contact" className="md:py-24 bg-white/30 backdrop-blur-[2px] mx-6 md:mx-8 2xl:mx-30 my-35 rounded-2xl px-10 py-20 ">
+      <section id="contact" className="bg-white/30 backdrop-blur-[2px] mx-6 md:mx-8 2xl:mx-30 my-36 rounded-2xl px-6 md:px-10 py-12 md:py-20"
+>
         <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 text-center">
           <h3 className="text-2xl md:text-3xl font-bold text-slate-900">
             Ready to start?

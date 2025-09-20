@@ -51,7 +51,8 @@ type Plan = {
    */
   export default function Pricing() {
     return (
-      <section id="pricing" className="md:py-24 bg-white/30 backdrop-blur-[2px] mx-6 md:mx-8 2xl:mx-30 my-35 rounded-2xl px-10 py-20 ">
+      <section id="pricing" className="bg-white/30 backdrop-blur-[2px] mx-6 md:mx-8 2xl:mx-30 my-36 rounded-2xl px-6 md:px-10 py-12 md:py-20"
+>
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="max-w-2xl">
             <h2 className="text-2xl md:text-4xl font-bold text-slate-900">

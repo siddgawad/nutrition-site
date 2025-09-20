@@ -21,14 +21,14 @@ export default async function Page() {
   const latestRecipes = recipes.slice(0, 3);
   const latestArticles = articles.slice(0, 3);
   return (
-    <div className="bg-green-200">
+    <div className="min-h-dvh bg-sunset">
     
       <Navbar />
       <div className="pt-2 lg:mx-8 xl:mx-10">
       <Hero />
       <Programs />
       {/* Latest Recipes */}
-      <section className="py-16 md:py-24 bg-white/30 backdrop-blur-[2px] mx-6 md:mx-8 2xl:mx-30 my-35 rounded-2xl px-10 py-20" id="latest-recipes">
+      <section className="glass mx-6 md:mx-8 2xl:mx-30 my-36 px-6 md:px-10 py-12 md:py-20">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <h2 className="text-2xl md:text-3xl font-bold text-slate-900">
             Latest Recipes
@@ -44,7 +44,7 @@ export default async function Page() {
         </div>
       </section>
       {/* Latest Articles */}
-      <section className="md:py-24  bg-white/30 backdrop-blur-[2px] mx-6 md:mx-8 2xl:mx-30 my-35 rounded-2xl px-10 py-20" id="latest-articles">
+      <section className="glass mx-6 md:mx-8 2xl:mx-30 my-36 px-6 md:px-10 py-12 md:py-20">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <h2 className="text-2xl md:text-3xl font-bold text-slate-900">
             Latest Articles

@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 
 export interface RecipeCardProps {
@@ -23,14 +24,14 @@ export default function RecipeCard({
   categories,
 }: RecipeCardProps) {
   return (
-    <article className="rounded-2xl border border-slate-200 bg-white overflow-hidden hover:shadow-md transition">
+    <article className="group rounded-2xl border border-slate-200 bg-white overflow-hidden hover:shadow-lg hover:-translate-y-0.5 transition">
       {imageUrl && (
         <Link href={`/recipes/${slug}`}>
-          {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img
+         
+          <Image
             src={imageUrl}
             alt={title}
-            className="w-full h-48 object-cover"
+            className="text-lg font-semibold text-green-800 group-hover:underline"
           />
         </Link>
       )}

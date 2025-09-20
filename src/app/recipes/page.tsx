@@ -22,7 +22,7 @@ export default async function RecipesPage() {
         title="Recipes"
         subtitle="Discover nutritious and delicious dishes to support your goals."
       />
-      <section className=" md:py-24 bg-white/30 backdrop-blur-[2px] mx-6 md:mx-8 2xl:mx-30 my-35 rounded-2xl px-10 py-20">
+      <section className=" md:py-24 bg-white/30 backdrop-blur-[2px] mx-6 md:mx-8 2xl:mx-30 my-36 rounded-2xl px-10 py-20">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5 gap-6">
             {recipes.map((recipe) => (

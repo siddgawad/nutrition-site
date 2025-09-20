@@ -1,8 +1,11 @@
+// "use client";
+
 import { notFound } from "next/navigation";
 import Banner from "../../../components/Banner";
 import { getRecipe } from "../../../components/lib/api";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+// import { useState } from "react";
 
 interface RecipePageProps {
   params: { slug: string };
@@ -14,6 +17,7 @@ interface RecipePageProps {
  * cannot be found, Next.js will render a 404 page.
  */
 export default async function RecipePage({ params }: RecipePageProps) {
+  // const cats = ["All","PCOS","High-Protein","Breakfast","Basics","Pregnancy"];
   const recipe = await getRecipe(params.slug);
   if (!recipe) {
     notFound();
@@ -24,6 +28,14 @@ export default async function RecipePage({ params }: RecipePageProps) {
         <section  className="pt-20 lg:mx-8 xl:mx-10">
         <Banner title={recipe.title} subtitle={recipe.excerpt} />
       <article className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8 py-16">
+      {/* <div className="mt-6 flex flex-wrap gap-2 justify-center">
+  {cats.map(c => (
+    <button key={c} onClick={()=>setCat(c)}
+      className={`px-3 py-1 rounded-full text-sm border ${cat===c? "bg-green-700 text-white border-green-700":"bg-white/60 text-green-800 border-slate-200"}`}>
+      {c}
+    </button>
+  ))}
+</div> */}
         {/* Metadata */}
         <div className="text-sm text-slate-500 mb-4">
           {new Date(recipe.date).toLocaleDateString('en-IN', {
